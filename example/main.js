@@ -1,6 +1,7 @@
-var work = require('../');
+var iframarfi = require('../');
 
-var w = work(require('./worker.js'));
-w.addEventListener('message', function (ev) {
+var iframe = iframarfi(require('./worker.js'));
+
+iframe.contentWindow.addEventListener('message', function (ev) {
     console.log(ev.data);
 });

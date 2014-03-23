@@ -1,9 +1,12 @@
 {
-  "name": "webworkify",
+  "name": "iframarfi",
   "version": "0.1.0",
   "description": "launch a web worker that can require() in the browser with browserify",
   "main": "index.js",
-  "dependencies": {},
+  "dependencies": {
+    "iframe" : "",
+    "gamma" : ""
+  },
   "devDependencies": {
     "gamma": "~0.1.0",
     "tape": "~1.0.4"
@@ -13,9 +16,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/substack/webworkify.git"
+    "url": "git://github.com/NHQ/iframarfi.git"
   },
-  "homepage": "https://github.com/substack/webworkify",
+  "homepage": "https://github.com/NHQ/iframarfi",
   "keywords": [
     "web",
     "worker",

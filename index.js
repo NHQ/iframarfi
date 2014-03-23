@@ -1,3 +1,5 @@
+var iframe = require('iframe')
+
 var bundleFn = arguments[3];
 var sources = arguments[4];
 var cache = arguments[5];
@@ -45,8 +47,12 @@ module.exports = function (fn) {
             ;
         }).join(',')
         + '},{},[' + stringify(skey) + '])'
-    ;
-    return new Worker(window.URL.createObjectURL(
-        new Blob([src], { type: 'text/javascript' })
-    ));
+     ;
+
+     var body = '<script type=text/javascript>' + src + '</script>'
+   
+     var frame = iframe({body: body, sandboxAttributes: ['allow-scripts', 'allow-same-origin']})
+
+    return frame.iframe
+
 };
