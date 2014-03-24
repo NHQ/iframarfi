@@ -1,6 +1,11 @@
-# webworkify
+# iframarfi
 
-launch a web worker that can require() in the browser with browserify
+launch an iframe that can require() in the browser with browserify
+
+works like [webworkify](https://npmjs.org/package/webworkify)
+using [iframe](https://npmjs.org/package/iframe)
+
+The follow examples are not quite right, as this repo is a clone.  See the actual exampls, notably [within](/examples/within.js)
 
 # example
 

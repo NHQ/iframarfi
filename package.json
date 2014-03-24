@@ -1,7 +1,7 @@
 {
   "name": "iframarfi",
   "version": "0.1.0",
-  "description": "launch a web worker that can require() in the browser with browserify",
+  "description": "launch an iframe that can require() in the browser with browserify",
   "main": "index.js",
   "dependencies": {
     "iframe" : "",
@@ -20,8 +20,7 @@
   },
   "homepage": "https://github.com/NHQ/iframarfi",
   "keywords": [
-    "web",
-    "worker",
+    "iframe",
     "background",
     "browser",
     "fork"
