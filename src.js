@@ -1,5 +1,3 @@
-var iframe = require('iframe')
-
 var bundleFn = arguments[3];
 var sources = arguments[4];
 var cache = arguments[5];
@@ -48,8 +46,6 @@ module.exports = function (fn) {
         + '},{},[' + stringify(skey) + '])'
      ;
     
-    src = window.URL.createObjectURL(new Blob([src], {type:'text/javascript'}))
-    src = '<script type=text/javascript src='+src+'></script>'
-    var frame = iframe({body: src, sandboxAttributes: ['allow-scripts', 'allow-same-origin', 'allow-forms', 'allow-popups', 'allow-pointer-lock']})
-    return frame.iframe
+    return src 
+
 };
