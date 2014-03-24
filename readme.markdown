@@ -7,7 +7,7 @@ using [iframe](https://npmjs.org/package/iframe)
 
 ## example
 
-see examples, [like this one](/example/within.js), which opens a frame within an iframe with requires.
+see examples, [like this one](/example/within.js).
 
 ## install
 

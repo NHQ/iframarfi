@@ -1,4 +1,4 @@
-var iframify = require('../iframify')
+var iframify = require('../')
 var frame = iframify(require('./worker'))
 var gamma = require('gamma');
 
