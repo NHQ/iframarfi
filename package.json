@@ -1,6 +1,6 @@
 {
   "name": "iframarfi",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "launch an iframe that can require() in the browser with browserify",
   "main": "index.js",
   "dependencies": {
