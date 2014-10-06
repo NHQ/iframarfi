@@ -7,6 +7,8 @@ using [iframe](https://npmjs.org/package/iframe)
 
 ## example
 
+[live example here, open yr console](http://nhq.github.io/iframarfi/)
+
 see examples, [like this one](/example/within.js).
 
 ## install
