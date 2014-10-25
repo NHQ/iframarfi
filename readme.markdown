@@ -1,4 +1,4 @@
-# iframarfi
+# abre 
 
 launch an window that can require() in the browser with browserify
 
