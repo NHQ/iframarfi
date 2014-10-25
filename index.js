@@ -1,11 +1,11 @@
-var iframe = require('iframe')
+var iframe = require('windorfer')
 
 var bundleFn = arguments[3];
 var sources = arguments[4];
 var cache = arguments[5];
 var stringify = JSON.stringify;
 
-module.exports = function (fn) {
+module.exports = function (fn, name, params) {
     var keys = [];
     var wkey;
     var cacheKeys = Object.keys(cache);
@@ -50,6 +50,6 @@ module.exports = function (fn) {
     
     src = window.URL.createObjectURL(new Blob([src], {type:'text/javascript'}))
     src = '<script type=text/javascript src='+src+'></script>'
-    var frame = iframe({body: src, sandboxAttributes: ['allow-scripts', 'allow-same-origin', 'allow-forms', 'allow-popups', 'allow-pointer-lock']})
-    return frame.iframe
+    var frame = iframe({body: src, name: name, params: params})
+    return frame.ref
 };

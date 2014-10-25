@@ -1,11 +1,10 @@
 {
-  "name": "iframarfi",
+  "name": "abre",
   "version": "0.3.0",
-  "description": "launch an iframe that can require() in the browser with browserify",
+  "description": "launch new browser windows/tabs that can use require() in the browser with browserify",
   "main": "index.js",
   "dependencies": {
-    "iframe": "",
-    "gamma": ""
+    "windorfer": ""
   },
   "devDependencies": {
     "gamma": "~0.1.0",
@@ -16,19 +15,16 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/NHQ/iframarfi.git"
+    "url": "git://github.com/NHQ/windorfer.git"
   },
-  "homepage": "https://github.com/NHQ/iframarfi",
+  "homepage": "https://github.com/NHQ/windorfer",
   "keywords": [
-    "iframe",
+    "window.open",
     "background",
-    "browser",
-    "fork"
+    "browser"
   ],
   "author": {
-    "name": "James Halliday",
-    "email": "mail@substack.net",
-    "url": "http://substack.net"
+    "name": "subscript"
   },
   "license": "MIT"
 }
