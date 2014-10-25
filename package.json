@@ -1,6 +1,6 @@
 {
   "name": "abre",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "description": "launch new browser windows/tabs that can use require() in the browser with browserify",
   "main": "index.js",
   "dependencies": {
